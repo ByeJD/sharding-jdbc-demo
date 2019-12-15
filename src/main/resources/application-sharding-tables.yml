@@ -52,13 +52,3 @@ spring:
 #        inline:
 #          sharding-column: user_id
 #          algorithm-expression: ds$->{user_id % 2}
-
-
-mybatis:
-  mapper-locations: classpath:/mapper/*.xml
-  type-aliases-package: com.quan.shardingjdbcdemo.shardingjdbc.entity
-
-logging:
-  level:
-    org.springframework: info
-  config: classpath:log/logback-dev.xml

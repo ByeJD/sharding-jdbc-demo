@@ -1,8 +1,18 @@
 spring:
   profiles:
-    # 必须要开启要不然找不到application-druid.yml配置文件
-    active: dev
+    active: sharding-tables
+#    active: sharding-tables
+#    active: sharding-tables
+#    active: sharding-tables
 
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.quan.shardingjdbcdemo.shardingjdbc.entity
+
+logging:
+  level:
+    org.springframework: info
+  config: classpath:log/logback-dev.xml
 server:
   port: 8080
 
