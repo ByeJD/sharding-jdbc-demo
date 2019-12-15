@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    # 必须要开启要不然找不到application-druid.yml配置文件
+    active: dev
+
+server:
+  port: 8080
+
